@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Personal Portfolio
+  link(rel='stylesheet' href='/static/home.css')
+.container
+  div
+    li#hamburger.li.hamburger-li
+      img.hamburger(src='/static/hamburger.svg' alt='Click to collapse / expand')
+    #sidebar.sidebar.box-shadow
+      nav#nav
+        ul
+          li.li Home
+          li.li My intro
+          li.li Services
+          li.li Blog
+          li.li Contact Me
+  .main
+    .infoContainer.box-shadow
+      .devInfo
+        .hello Hi I&apos;m
+        .name Aryan Sisodiya
+        .about Developer, coder, Student
+        .moreabout I am a developer and i love to code 
+        .buttons
+          li.li Download CV
+          li.li 
+            a(href="/signin") Sign in
+      .devPic
+        img(src='./img/dev.png' alt='Aryan Sisodiya')
+script(src='/static/script.js')
